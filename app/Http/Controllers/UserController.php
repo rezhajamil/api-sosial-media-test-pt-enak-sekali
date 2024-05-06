@@ -39,17 +39,6 @@ class UserController extends Controller
         return response()->json(['user' => $user]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
     public function update(Request $request, $id)
     {
         $user = Auth::user();
